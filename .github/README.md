@@ -1,3 +1,9 @@
+> **Warning**
+> 
+> This is still highly unfinished!
+> 
+> Check the [TO-DO List](https://github.com/xStormyy/GDCSS/blob/f111fee0383bb0d88106d00a04f794c56a199ba6/.github/TODO.md)
+
 <h1>
 <img height="84px" width="256px" src="https://github.com/xStormyy/GDCSS/blob/72dc543d0327c7060897d958224bb367dcbebc6a/.github/assets/gdcss-logo-finished.png"/>
  </h1>
