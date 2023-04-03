@@ -50,3 +50,5 @@ You can easily install the Stylesheet by copying the link below and pasting it i
 - **.gold** - Gold Pusab
 ### Boxes
 - **Default Div** - Brown (GJ_square01)
+### Inputs
+- **Default Range** - Yellow Slider
