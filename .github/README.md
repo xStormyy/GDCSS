@@ -16,7 +16,7 @@ Why? Because you'd instantly know that a site has some sort of GD content if the
 ## Getting Started
 You can easily install the Stylesheet by copying the link below and pasting it into the *header* in your HTML file.
 ```HTML
-<link rel="stylesheet" href="gdcss.css">
+<link rel="stylesheet" href="GDCSS/gdcss.css">
 ```
 *Example:*
 ```HTML
@@ -25,13 +25,13 @@ You can easily install the Stylesheet by copying the link below and pasting it i
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- GDCSS Stylesheet -->
-    <link rel="stylesheet" href="gdcss.css">
+    <link rel="stylesheet" href="GDCSS/gdcss.css">
     <!-- GDCSS Stylesheet -->
     <title>Document</title>
 </head>
 ```
 
-## Classes
+## Features
 ### Backgrounds
 - **Default** - Menu Background
 - **.bg-vault** - Vault Background
@@ -46,7 +46,7 @@ You can easily install the Stylesheet by copying the link below and pasting it i
 - **.btn-lg** - Light Gray Button (GJ_button_04)
 ### Text
 - **Default H1, H2, H3** - Pusab
-- **Default p** - Comments Font (Aller)
+- **Default p** - Medium Quality Comments Font (Aller)
 - **.gold** - Gold Pusab
 ### Boxes
 - **Default Div** - Brown (GJ_square01)
