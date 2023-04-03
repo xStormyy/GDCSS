@@ -7,7 +7,10 @@
 <h1>
 <img height="84px" width="256px" src="https://github.com/xStormyy/GDCSS/blob/72dc543d0327c7060897d958224bb367dcbebc6a/.github/assets/gdcss-logo-finished.png"/>
  </h1>
-A Stylesheet for HTML that replicates the visuals of Geometry Dash.
+A Stylesheet for HTML that replicates the visuals of Geometry Dash.<br>
+<br>
+Since there are many GD-related sites popping up more often, I decided to remake GD's visuals in CSS for everyone to use. 
+Why? Because you'd instantly know that a site has some sort of GD content if the text, buttons, etc look exactly like GD
 
 # Documentation 📖
 ## Getting Started
