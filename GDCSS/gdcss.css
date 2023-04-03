@@ -1,0 +1,235 @@
+/* --------------------------------------------------
+GDCSS made by xStormy (https://github.com/xStormyy)
+Github Repository: https://github.com/xStormyy/GDCSS
+-------------------------------------------------- */
+
+/* ⚠ ⚠ ⚠ Notes ⚠ ⚠ ⚠
+
+You can freely change any colors in your own projects, 
+the variables below allow you to do this task more efficiently
+
+- If your site isn't gonna be scrolled then you might wanna change the height of the body to 100vh
+
+Here's what I mean:
+    body {
+    height: 100vh;
+    background-image: linear-gradient(var(--bg-l), var(--bg-d));
+    color: var(--text);
+}
+
+
+- If you didn't know, you can have multiple classes for one element, 
+meaning that you can easily adjust the width of the sliders
+
+Example:
+    <input type="range" class="class1 class2"></input>
+*/
+
+:root {
+    /* General */
+    --text: white;
+    --text-outl: black;
+    --text-sh: rgba(0, 0, 0, 0.3);
+
+    --bg-l: #0065FD;
+    --bg-d: #002E73;
+
+    /* gold text */
+    --text-g-top: #FDA00C;
+    --text-g-bottom: #FFE348;
+
+    /* Buttons */
+    --btn-gr: #7ade2d;
+    --btn-gr-l: #c7f349;
+    --btn-gr-d: #48841b;
+
+    --btn-pi: #ff8bfe;
+    --btn-pi-l: #febdff;
+    --btn-pi-d: #bb52fe;
+
+    --btn-gra: #9b9b9a;
+    --btn-gra-l: #8c9fae;
+    --btn-gra-d: #454a5a;
+
+
+    --btn-lgr: #9b9b9a;
+    --btn-lgr-l: #c6c7c6;
+    --btn-lgr-d: #5d5d5c;
+
+
+    --btn-cy: #24e5e4;
+    --btn-cy-l: #47ffd9;
+    --btn-cy-d: #158988;
+
+    /* Popups */
+    --pup-br: #985532;
+    --pup-br-l: #feaa54;
+    --pup-br-d: #543211;
+}
+
+@font-face {
+    font-family: Pusab; 
+    src: url('Pusab.ttf')
+}
+
+
+body {
+    height: 100%;
+    background-image: linear-gradient(var(--bg-l), var(--bg-d));
+    color: var(--text);
+    font-family: Pusab, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Backgrounds */
+.bg-vault {
+    background-image: linear-gradient(#4B0062, #22002D) !important;
+}
+
+.bg-purple {
+    background-image: linear-gradient(#6E00FD, #330074) !important;
+}
+
+.bg-dark {
+    background-image: linear-gradient(#323232, #171717) !important;
+}
+
+/* Text */
+h1, h2, h3 {
+    color: var(--text);
+    font-weight: normal;
+    text-shadow: 0.375vh 0.375vh 0vh var(--text-sh);
+    -webkit-text-stroke-color: var(--text-outl);
+    -webkit-text-stroke-width: 0.20vh;
+    font-family: Pusab, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    color: var(--text);
+    font-family: aller, helvetica, arial;
+    font-size: 2.9vh;
+    word-break: break-word;
+}
+
+.gold {
+    -webkit-text-stroke-width: 0.265vh;
+    background: -webkit-linear-gradient(#FDA00C, #FFE348);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-filter: drop-shadow(0.25vh 0.25vh rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0.25vh 0.25vh rgba(0, 0, 0, 0.25));
+    text-shadow: none !important;
+}
+
+/* Buttons */
+button {
+    border-radius: 10px;
+    outline: var(--text);
+    outline-style: solid;
+    border-color: var(--text-outl);
+    border-style: solid;
+    background: var(--btn-gr);
+    padding: 15px;
+    height: 84px;
+    font-size: 32px;
+    font-family: Pusab;
+    box-shadow: 3px 3px 1px 0px var(--btn-gr-l) inset, -3px -3px 1px 0px var(--btn-gr-d) inset;
+    color: var(--text);
+    font-weight: normal;
+    text-shadow: 0.375vh 0.375vh 0vh var(--text-sh);
+    -webkit-text-stroke-color: var(--text-outl);
+    -webkit-text-stroke-width: 0.20vh;
+}
+
+button:hover {
+    animation: bounce 0.25s ease-in-out forwards;
+}
+
+.btn-p {
+    background: var(--btn-pi);
+    box-shadow: 3px 3px 1px 0px var(--btn-pi-l) inset, -3px -3px 1px 0px var(--btn-pi-d) inset;
+}
+
+.btn-g {
+    background: var(--btn-gra);
+    box-shadow: 3px 3px 1px 0px var(--btn-gra-l) inset, -3px -3px 1px 0px var(--btn-gra-d) inset;
+}
+
+.btn-c {
+    background: var(--btn-cy);
+    box-shadow: 3px 3px 1px 0px var(--btn-cy-l) inset, -3px -3px 1px 0px var(--btn-cy-d) inset;
+}
+
+.btn-lg {
+    background: var(--btn-lgr);
+    box-shadow: 3px 3px 1px 0px var(--btn-lgr-l) inset, -3px -3px 1px 0px var(--btn-lgr-d) inset;
+}
+
+div {
+    background: var(--pup-br);
+    box-shadow: 0px 11px 0px -5px var(--pup-br-l) inset, 0px -11px 0px -5px var(--pup-br-d) inset;
+    height: 128px;
+    border-radius: 10px;
+    outline: var(--text);
+    outline-style: solid;
+    border-color: var(--text-outl);
+    border-style: solid;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding: 5px;
+}
+
+/* Slider */
+input[type="range"] {
+    background-color: rgba(0, 0, 0, 0);
+    appearance: none !important;
+    vertical-align: middle;
+    height: 25px;
+    min-height: 25px;
+    border: 1px solid;
+    cursor: pointer;
+    border-image: url(assets/track.png);
+    border-image-slice: 21 22 22 21;
+    border-image-width: 30px 30px 30px 30px;
+    margin-right: 20px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none !important;
+    height: 55px;
+    width: 55px;
+    background-image: url("assets/thumb.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    background-image: url("assets/thumb_active.png");
+}
+
+label {
+    font-size: 24px;
+    color: var(--text);
+    font-weight: normal;
+    text-shadow: 0.375vh 0.375vh 0vh var(--text-sh);
+    -webkit-text-stroke-color: var(--text-outl);
+    -webkit-text-stroke-width: 0.20vh;
+    font-family: Pusab, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Checkbox */
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.12);
+    }
+    75% {
+        transform: scale(1.06);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
