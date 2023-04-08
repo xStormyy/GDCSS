@@ -12,6 +12,7 @@ Why? Because you'd instantly know that a site has some sort of GD content if the
 
 # Documentation 📖
 ## Getting Started
+Download & unzip the .zip file in the [releases](https://github.com/xStormyy/GDCSS/releases) tab and paste them into your project.<br>
 You can easily install the Stylesheet by copying the link below and pasting it into the *header* in your HTML file.
 ```HTML
 <link rel="stylesheet" href="GDCSS/gdcss.css">
