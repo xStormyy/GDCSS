@@ -45,7 +45,7 @@ You can easily install the Stylesheet by copying the link below and pasting it i
 - **.btn-lg** - Light Gray Button (GJ_button_04)
 ### Text
 - **Default H1, H2, H3** - Pusab
-- **Default p** - Medium Quality Comments Font (Aller)
+- **Default p** - High Quality Comments Font (Helvetica)
 - **.gold** - Gold Pusab
 ### Boxes
 - **Default Div** - Brown (GJ_square01)
