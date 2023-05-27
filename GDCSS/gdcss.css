@@ -3,7 +3,7 @@ GDCSS made by xStormy (https://github.com/xStormyy)
 Github Repository: https://github.com/xStormyy/GDCSS
 -------------------------------------------------- */
 
-/* ⚠ ⚠ ⚠ Notes ⚠ ⚠ ⚠
+/* ----- ⚠ ⚠ ⚠ Notes ⚠ ⚠ ⚠ ------------------------------------------------------------------------------
 
 You can freely change any colors in your own projects, 
 the variables below allow you to do this task more efficiently
@@ -12,7 +12,7 @@ the variables below allow you to do this task more efficiently
 
 Here's what I mean:
     body {
-    height: 100vh;
+==> height: 100vh; <==
     background-image: linear-gradient(var(--bg-l), var(--bg-d));
     color: var(--text);
 }
@@ -23,53 +23,60 @@ meaning that you can easily adjust the width of the sliders
 
 Example:
     <input type="range" class="class1 class2"></input>
-*/
+------------------------------------------------------------------------------------------------------- */
+
 
 :root {
-    /* General */
+    /* ----- General ----- */
     --text: white;
     --text-outl: black;
     --text-sh: rgba(0, 0, 0, 0.3);
 
-    --bg-l: #0065FD;
-    --bg-d: #002E73;
+    --bg-l: rgb(0, 101, 253);
+    --bg-d: rgb(0, 46, 115);
 
-    /* gold text */
-    --text-g-top: #FDA00C;
-    --text-g-bottom: #FFE348;
+    /* ----- Gold Text ----- */
+    --text-g-top: rgb(253, 160, 12);
+    --text-g-bottom: rgb(255, 227, 72);
 
-    /* Buttons */
-    --btn-gr: #7ade2d;
-    --btn-gr-l: #c7f349;
-    --btn-gr-d: #48841b;
+    /* ----- Buttons ----- */
+    --btn-gr: rgb(122, 222, 45);
+    --btn-gr-l: rgb(199, 243, 73);
+    --btn-gr-d: rgb(72, 132, 27);
 
-    --btn-pi: #ff8bfe;
-    --btn-pi-l: #febdff;
-    --btn-pi-d: #bb52fe;
+    --btn-pi: rgb(255, 139, 254);
+    --btn-pi-l: rgb(254, 189, 255);
+    --btn-pi-d: rgb(187, 82, 254);
 
-    --btn-gra: #9b9b9a;
-    --btn-gra-l: #8c9fae;
-    --btn-gra-d: #454a5a;
-
-
-    --btn-lgr: #9b9b9a;
-    --btn-lgr-l: #c6c7c6;
-    --btn-lgr-d: #5d5d5c;
+    --btn-gra: rgb(155, 155, 154);
+    --btn-gra-l: rgb(140, 159, 174);
+    --btn-gra-d: rgb(69, 74, 90);
 
 
-    --btn-cy: #24e5e4;
-    --btn-cy-l: #47ffd9;
-    --btn-cy-d: #158988;
+    --btn-lgr: rgb(155, 155, 154);
+    --btn-lgr-l: rgb(198, 199, 198);
+    --btn-lgr-d: rgb(93, 93, 92);
 
-    /* Popups */
-    --pup-br: #985532;
-    --pup-br-l: #feaa54;
-    --pup-br-d: #543211;
+
+    --btn-cy: rgb(36, 229, 228);
+    --btn-cy-l: rgb(71, 255, 217);
+    --btn-cy-d: rgb(21, 137, 136);
+
+    /* ----- Popups ----- */
+    --pup-br: rgb(152, 85, 50);
+    --pup-br-l: rgb(254, 170, 84);
+    --pup-br-d: rgb(84, 50, 17);
 }
+
 
 @font-face {
     font-family: Pusab; 
     src: url('Pusab.ttf')
+}
+
+@font-face {
+    font-family: Oxygene-One;
+    src: url('oxygeneOne.TTF');
 }
 
 
@@ -80,7 +87,7 @@ body {
     font-family: Pusab, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* Backgrounds */
+/* ----- Backgrounds ----- */
 .bg-vault {
     background-image: linear-gradient(#4B0062, #22002D) !important;
 }
@@ -93,8 +100,8 @@ body {
     background-image: linear-gradient(#323232, #171717) !important;
 }
 
-/* Text */
-h1, h2, h3 {
+/* ----- Text ----- */
+h1, h2, h3, label {
     color: var(--text);
     font-weight: normal;
     text-shadow: 0.375vh 0.375vh 0vh var(--text-sh);
@@ -105,7 +112,7 @@ h1, h2, h3 {
 
 p {
     color: var(--text);
-    font-family: aller, helvetica, arial;
+    font-family: helvetica, arial;
     font-size: 2.9vh;
     word-break: break-word;
 }
@@ -121,7 +128,8 @@ p {
     text-shadow: none !important;
 }
 
-/* Buttons */
+
+/* ----- Buttons ------ */
 button {
     border-radius: 10px;
     outline: var(--text);
@@ -139,10 +147,19 @@ button {
     text-shadow: 0.375vh 0.375vh 0vh var(--text-sh);
     -webkit-text-stroke-color: var(--text-outl);
     -webkit-text-stroke-width: 0.20vh;
+    transition: 0.25s ease-in-out forwards;
 }
 
-button:hover {
+button:active {
     animation: bounce 0.25s ease-in-out forwards;
+}
+
+button:disabled {
+    filter: grayscale(1);
+}
+
+button:disabled:active {
+    animation: none;
 }
 
 .btn-p {
@@ -165,10 +182,11 @@ button:hover {
     box-shadow: 3px 3px 1px 0px var(--btn-lgr-l) inset, -3px -3px 1px 0px var(--btn-lgr-d) inset;
 }
 
+/* ----- popup ----- */
 div {
     background: var(--pup-br);
     box-shadow: 0px 11px 0px -5px var(--pup-br-l) inset, 0px -11px 0px -5px var(--pup-br-d) inset;
-    height: 128px;
+    height: fit-content;
     border-radius: 10px;
     outline: var(--text);
     outline-style: solid;
@@ -179,7 +197,7 @@ div {
     padding: 5px;
 }
 
-/* Slider */
+/* ----- Slider ----- */
 input[type="range"] {
     background-color: rgba(0, 0, 0, 0);
     appearance: none !important;
@@ -207,17 +225,44 @@ input[type="range"]::-webkit-slider-thumb:active {
     background-image: url("assets/thumb_active.png");
 }
 
+
 label {
-    font-size: 24px;
-    color: var(--text);
-    font-weight: normal;
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+/* ----- Text Input ----- */
+input[type="text"], select {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-family: Pusab;
+    font-size: 32px;
     text-shadow: 0.375vh 0.375vh 0vh var(--text-sh);
     -webkit-text-stroke-color: var(--text-outl);
     -webkit-text-stroke-width: 0.20vh;
-    font-family: Pusab, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* Checkbox */
+input[type="text"]::placeholder {
+    text-shadow: 0.375vh 0.375vh 0vh var(--text-sh);
+    -webkit-text-stroke-color: var(--text-outl);
+    -webkit-text-stroke-width: 0.20vh;
+    opacity: 0.75;
+}
+
+/* ----- select ----- */
+select {
+    padding: 0px 8px;
+}
+
+option {
+    background-color: var(--pup-br);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+}
 
 @keyframes bounce {
     0% {
